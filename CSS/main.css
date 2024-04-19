@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.todo-container{
+    width: 600px;
+    margin: 30px auto 0;
+    background-color: #f6f6f6;
+}
+.todo-container .add-task{
+    padding: 15px;
+    background-color: #78bcdb;
+    position: relative;
+}
+.todo-container .add-task input {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, .3);
+    width: calc(100% - 25px);
+    color: #fff
+}
+.todo-container .add-task input:focus{
+    outline: none;
+}
+.todo-container .add-task .plus{
+    position: absolute;
+    height: 43px;
+    width: 43px;
+    background-color: #fff;
+    right: 12px;
+    border-radius: 50%;
+    line-height: 43px;
+    text-align: center;
+    color: #000a96;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all .3s;
+}
+.todo-container .add-task .plus:hover{
+    transform: rotate(90deg) ;
+}
+.todo-container .tasks-contant {
+    padding: 15px;
+}
+
+.todo-container .tasks-contant .no-tasks-message {
+color: #777;
+font-size: 15px;
+}
+.todo-container .tasks-contant > span {
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+}
+.todo-container .tasks-contant > span:not(:last-child){
+    margin-bottom: 10px;
+}
+.todo-container .tasks-contant .task-box .delete {
+    float: right;
+    background-color: #e91e63;
+    padding: 3px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.todo-container .tasks-contant .task-box.finished {
+    text-decoration: line-through;
+
+}
+.task-status {
+    overflow: hidden;
+    margin: 10px auto;
+    width: 600px;
+    font-size: 12px;
+}
+.task-status .tasks-count{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+.task-status .tasks-completed{
+    width: 50%;
+    float: right;
+    padding: 10px;
+    text-align: right;
+}
+.task-status .tasks-count span,
+.task-status .tasks-completed span{
+    color: #fff;
+    padding: 1px 5px;
+    font-size: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.task-status .tasks-count span{
+background-color: #e91e63;
+}
+.task-status .tasks-completed span{
+background-color: #0ea34c;
+}
+.quote{
+    
+    color: #0287c5;
+    font-size: larger;
+}
+.lugrasimo-regular {
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
